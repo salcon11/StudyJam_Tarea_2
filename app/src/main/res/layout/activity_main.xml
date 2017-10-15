@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.silviaalcon.tarean2calculadora.MainActivity"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_trans"
+        android:text="@string/prinum"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/pri"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            />
+
+        <EditText
+            android:id="@+id/caja1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_trans"
+        android:layout_gravity="right"
+        android:text="@string/segnum"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/caja2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/seg"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_suma"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/suma"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:onClick="suma"/>
+
+        <Button
+            android:id="@+id/button_resta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/res"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:onClick="resta"/>
+
+        <Button
+            android:id="@+id/button_multi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/por"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:onClick="multiplicacion"/>
+
+        <Button
+            android:id="@+id/button_divi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/div"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:onClick="division"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cajar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:textSize="30sp"/>
+
+</LinearLayout>
