@@ -24,9 +24,9 @@ Dentro de Android Studio:
 
 ## Captura
 
-<div align="center">
+<div style="text-align:center;">
     <center>
-        <table border="0">
+        <table border="0" style="margin: 0 auto;">
             <tr>
                 <td> <img src="/img/captura1.png" width="300"> </td>
                 <td> <img src="/img/captura2.png" width="300"> </td>
